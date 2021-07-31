@@ -165,6 +165,7 @@ __webpack_require__.r(__webpack_exports__);
 
 
 flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializers.add('justoverclock/geo-weather', function () {
+  Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_forum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype, ['oncreate', 'onupdate'], _GeoWeather__WEBPACK_IMPORTED_MODULE_3__["default"]);
   Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_forum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype, 'sidebarItems', function (items) {
     var bgimage = flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-geo-weather/seasons.png';
     items.add('GeoWeatherWg', m("div", {
@@ -177,7 +178,6 @@ flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.initializers.add('justov
     }, flarum_forum_app__WEBPACK_IMPORTED_MODULE_0___default.a.translator.trans('geo-weather.forum.unknown'))]), 10);
   });
 });
-Object(flarum_common_extend__WEBPACK_IMPORTED_MODULE_1__["extend"])(flarum_forum_components_IndexPage__WEBPACK_IMPORTED_MODULE_2___default.a.prototype, ['oncreate', 'onupdate'], _GeoWeather__WEBPACK_IMPORTED_MODULE_3__["default"]);
 
 /***/ }),
 

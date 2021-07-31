@@ -4,6 +4,7 @@ import IndexPage from "flarum/forum/components/IndexPage";
 import GeoWeather from './GeoWeather';
 
 app.initializers.add('justoverclock/geo-weather', () => {
+  extend(IndexPage.prototype, ['oncreate', 'onupdate'], GeoWeather);
   extend(IndexPage.prototype, 'sidebarItems', (items) => {
     const bgimage = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-geo-weather/seasons.png';
     items.add(
@@ -21,5 +22,5 @@ app.initializers.add('justoverclock/geo-weather', () => {
     )
   })
 });
-extend(IndexPage.prototype, ['oncreate', 'onupdate'], GeoWeather);
+
 
