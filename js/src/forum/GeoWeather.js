@@ -13,7 +13,7 @@ export default function () {
     function getWeather(position) {
       let lat = position.coords.latitude;
       let long = position.coords.longitude;
-      let API_KEY = '63eccf81fc7eb1c007eb7d95bca961a6';
+      let API_KEY = '';
       let lang = app.forum.attribute('lang');
       let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&lang=${lang}&appid=${API_KEY}`;
 
