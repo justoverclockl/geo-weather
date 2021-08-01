@@ -8,7 +8,6 @@
  * file that was distributed with this source code.
  */
 
-
 import app from 'flarum/admin/app';
 
 app.initializers.add('justoverclock/geo-weather', () => {
