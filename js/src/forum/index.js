@@ -46,7 +46,7 @@ app.initializers.add('justoverclock/geo-weather', () => {
             'GeoWeatherWg',
             m('div', { className: 'weather', style: 'background-image: url(' + bgimage + ')' }, [
                 m('div', { className: 'col1' }, m('h1', { id: 'temp-main' }, app.translator.trans('geo-weather.forum.temp'))),
-                m('div', { className: 'colcenter' }, m('h2', { id: 'time' })),
+                m('div', { className: 'clock' }, m('h2', { id: 'time' })),
                 m('div', { className: 'col2' }, m('h2', { id: 'condition' }, app.translator.trans('geo-weather.forum.unknown'))),
             ]),
             10
