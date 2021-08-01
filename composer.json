@@ -2,7 +2,9 @@
   "name": "justoverclock/geo-weather",
   "description": "Add a weather widget to Flarum",
   "keywords": [
-    "flarum"
+    "Geo Weather",
+    "wheater",
+    "wheater widget"
   ],
   "type": "flarum-extension",
   "license": "MIT",
@@ -29,9 +31,9 @@
       "title": "Geo Weather",
       "category": "",
       "icon": {
-        "name": "",
-        "backgroundColor": "",
-        "color": ""
+        "name": "fas fa-cloud-sun",
+        "backgroundColor": "yellow",
+        "color": "white"
       }
     },
     "flagrow": {
