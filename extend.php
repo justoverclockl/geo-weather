@@ -13,6 +13,7 @@
 namespace Justoverclock\GeoWeather;
 
 use Flarum\Extend;
+use Flarum\Api\Event\Serializing;
 
 return [
     (new Extend\Frontend('forum'))
@@ -24,4 +25,6 @@ return [
     new Extend\Locales(__DIR__.'/resources/locale'),
     (new Extend\Settings)
         ->serializeToForum('lang', 'justoverclock-geo-weather.lang'),
+    (new Extend\Settings)
+        ->serializeToForum('wheaterApiKey', 'justoverclock-geo-weather.wheaterApiKey'),
 ];
