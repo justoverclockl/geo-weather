@@ -1,6 +1,6 @@
 # Geo Weather
 
-![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://img.shields.io/packagist/v/justoverclock/geo-weather.svg)](https://packagist.org/packages/justoverclock/geo-weather) [![Total Downloads](https://img.shields.io/packagist/dt/justoverclock/geo-weather.svg)](https://packagist.org/packages/justoverclock/geo-weather)
+![License](https://img.shields.io/badge/license-MIT-blue.svg) [![Latest Stable Version](https://poser.pugx.org/justoverclock/geo-weather/v)](https://packagist.org/packages/justoverclock/geo-weather) [![Total Downloads](https://poser.pugx.org/justoverclock/geo-weather/downloads)](https://packagist.org/packages/justoverclock/geo-weather)
 
 # Want to know what's the weather out there? Don't you want to go out to check? Here is the solution!
 
