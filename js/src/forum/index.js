@@ -40,8 +40,6 @@ app.initializers.add('justoverclock/geo-weather', () => {
     });
     extend(IndexPage.prototype, 'sidebarItems', (items) => {
         const bgimage = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-geo-weather/4seasons.gif';
-        var today = new Date();
-        var time = today.getHours() + ':' + today.getMinutes();
         items.add(
             'GeoWeatherWg',
             m('div', { className: 'weather', style: 'background-image: url(' + bgimage + ')' }, [
