@@ -36,7 +36,10 @@ app.initializers.add('justoverclock/geo-weather', () => {
             frame.innerHTML = hour + ':' + minute + ':' + second;
         }
 
-        setInterval(settingClock, 500);
+        this.timeInterval = setInterval(settingClock, 500);
+    });
+    extend(IndexPage.prototype, 'onremove', function () {
+        clearInterval(this.timeInterval);
     });
     extend(IndexPage.prototype, 'sidebarItems', (items) => {
         const bgimage = app.forum.attribute('baseUrl') + '/assets/extensions/justoverclock-geo-weather/4seasons.gif';
