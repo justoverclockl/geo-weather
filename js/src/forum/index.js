@@ -12,9 +12,10 @@ import app from 'flarum/forum/app';
 import { extend } from 'flarum/common/extend';
 import IndexPage from 'flarum/forum/components/IndexPage';
 import GeoWeather from './GeoWeather';
+import Page from "flarum/common/components/Page";
 
 app.initializers.add('justoverclock/geo-weather', () => {
-    extend(IndexPage.prototype, ['oncreate', 'onupdate'], GeoWeather);
+    extend(Page.prototype, ['oncreate', 'onupdate'], GeoWeather);
     extend(IndexPage.prototype, 'oncreate', function () {
         function settingClock() {
             var today = new Date();

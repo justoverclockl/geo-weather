@@ -11,7 +11,7 @@
 import app from 'flarum/forum/app';
 
 export default function () {
-    $(document).ready(function () {
+
         function getLocation() {
             if (navigator.geolocation) {
                 navigator.geolocation.getCurrentPosition(getWeather);
@@ -38,5 +38,5 @@ export default function () {
         }
 
         getLocation();
-    });
+
 }
