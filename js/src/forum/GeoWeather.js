@@ -25,7 +25,7 @@ export default function () {
             let long = position.coords.longitude;
             let API_KEY = app.forum.attribute('wheaterApiKey');
             let lang = app.forum.attribute('lang') || 'en';
-            let baseURL = `http://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&lang=${lang}&appid=${API_KEY}`;
+            let baseURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&lang=${lang}&appid=${API_KEY}`;
 
             $.get(baseURL, function (res) {
                 let data = res.current;
