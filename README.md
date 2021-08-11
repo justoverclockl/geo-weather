@@ -11,7 +11,7 @@ A [Flarum](http://flarum.org) extension. Add a weather widget to Flarum
 
 ### Usage
 
-Register your free api key on http://api.openweathermap.org/ and paste the generated key into extension settings.
+Register your free api key on https://api.openweathermap.org/ and paste the generated key into extension settings.
 
 ### Installation
 
